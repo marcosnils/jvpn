@@ -29,7 +29,7 @@ use POSIX;
 my %Config;
 my @config_files = ("./jvpn.ini", $ENV{'HOME'}."/.jvpn.ini", "/etc/jvpn/jvpn.ini");
 my $config_file = '';
-my $show_help = 1;
+my $show_help = 0;
 # find configuration file
 foreach my $line (@config_files) {
 	$config_file=$line;
