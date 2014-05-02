@@ -172,7 +172,7 @@ my $dfirst="";
 if ($res->is_success) {
 	print("Transfer went ok\n");
 	# next token request
-	if ($response_body =~ /name="frmDefender"/ || $response_body =~ /name="frmNextToken"/ || $response_body =~ /name="frmLogin"/) {
+	if ($response_body =~ /name="frmDefender"/ || $response_body =~ /name="frmNextToken"/ || $response_body =~ /name="password#2"/) {
 		$response_body =~ m/name="key" value="([^"]+)"/;
 		my $key=$1;
 		# grid cards. $1 contains grid reference
@@ -207,7 +207,7 @@ if ($res->is_success) {
 			]);
 		$response_body=$res->decoded_content;
 	}
-	if ( $response_body =~ /Invalid username or password/){
+	if ( $response_body =~ /Invalid primary username or password/){
 		print "Invalid user name or password, exiting \n";
 		exit 1;
 	}
