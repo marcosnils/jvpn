@@ -207,8 +207,8 @@ if ($res->is_success) {
 			]);
 		$response_body=$res->decoded_content;
 	}
-	if ( $response_body =~ /Invalid primary username or password/){
-		print "Invalid user name or password, exiting \n";
+	if ( $response_body =~ /Invalid/){
+		print "Invalid user name, password or realm, exiting \n";
 		exit 1;
 	}
 	# hostchecker authorization stage
