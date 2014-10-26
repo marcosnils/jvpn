@@ -2,10 +2,9 @@
 
 Make sure your OS can execute 32 bit binaries. If you're using ubuntu 14.04 or newer you should run:
 
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
-sudo apt-get install lib32z1
+sudo dpkg --add-architecture i386  
+sudo apt-get update  
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 libz32z1  
 
 ###ReadTerm perl module
 
