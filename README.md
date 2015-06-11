@@ -15,7 +15,7 @@ sudo apt-get install libterm-readkey-perl
 
 Abrir el archivo `jvpn.ini`y modificar los siguientes parámetros:
 
-`host` - Host de la VPN (ej: legolas.mexxxxxxxxx.con o cerbero.mexxxxxxxxx.com)
+`host` - Host de la VPN (ej: legolas.mexxxxxxxxx.com o cerbero.mexxxxxxxxx.com)
 
 `realm` - El Real requerido.  ej. Users (SFA)
 
